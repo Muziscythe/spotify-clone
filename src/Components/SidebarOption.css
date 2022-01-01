@@ -1,0 +1,20 @@
+.sidebarOption{
+    display: flex;
+    color: #a4a4a4;
+    margin: 10px 25px 15px;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+.sidebarOption:hover{
+    color: #eee;
+    cursor: pointer;
+}
+
+.sidebarOption__icon{
+    margin-right: 16px;
+}
+
+.sidebarOption__title{
+    font-weight: 500;
+    font-size: 0.9rem;
+}

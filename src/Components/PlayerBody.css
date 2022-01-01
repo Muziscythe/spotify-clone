@@ -1,0 +1,63 @@
+.playerBody {
+  height: 100vh;
+  flex: 0.84;
+  overflow-y: overlay;
+  background: -webkit-linear-gradient(#3d2c8d, rgba(0, 0, 0, 0.5));
+  background-color: rgb(91, 87, 115);
+}
+.playerBody::-webkit-scrollbar {
+  display: none;
+}
+
+.playerBody__banner {
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+.playerBody__content {
+  padding-top: 10px;
+  background: -webkit-linear-gradient(#241953, rgba(0, 0, 0, 1));
+}
+.banner__image {
+  height: 15vw;
+  object-fit: contain;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.playerBody__info > strong {
+  font-size: 0.8rem;
+}
+
+.playerBody__info > h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.playerBody__info > p {
+  font-size: 0.8rem;
+  color: #b4b4b4;
+  margin-left: 5px;
+}
+
+.playerBody__iconRow {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  color: white;
+  padding: 10px;
+}
+
+.playerBody__icon {
+  margin-left: 25px;
+  transition: all 200ms ease;
+}
+.playerBody__icon:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.playerBody__songRow {
+  margin-left: 20px;
+}

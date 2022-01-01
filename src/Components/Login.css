@@ -1,0 +1,34 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: #191414;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login__logo {
+    width: 100%;
+    object-fit: contain;
+    height: 200px;
+    margin: 40px auto;
+  }
+  
+  .login__button {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1db954;
+    text-decoration: none !important;
+    margin: 40px auto;
+    border-radius: 99px;
+    padding: 18px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+  }
+  
+  .login__button:hover {
+    transform: scale(1.05);
+  }
+  
