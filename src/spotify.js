@@ -2,7 +2,7 @@
 
 const authEndPoint = "https://accounts.spotify.com/authorize?";
 const client_id = "80dc44d1b26442c591a3b7adfdc623cb";
-const redirect_uri = "https://spotify-clone-muzi.web.app";
+const redirect_uri = "https://spotify-clone-muzi.web.app ";
 
 const scopes = [
   "user-read-playback-position",
