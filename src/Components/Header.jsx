@@ -7,6 +7,10 @@ import {useDataLayer} from "../DataProvider";
 
 function Header() {
     const {user} = useDataLayer();
+    function description(str, len) {
+        return str?.length > len ? str.substr(0, len - 1) + "..." : str;
+      }
+    
     return (
         <div className="header">
             <div className='header__left'>
@@ -18,7 +22,7 @@ function Header() {
                 <h4 className='header__upgrade'>UPGRADE</h4>
                 <div className='header__profile'>
                     <Avatar alt="" src={user?.images[0].url} sx={{width:28,height:28}} />
-                    <h4>{user?.display_name}</h4>
+                    <h4>{description(user?.display_name, 10)}</h4>
                 </div>
             </div>
             </div>
