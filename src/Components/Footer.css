@@ -15,7 +15,8 @@
   flex: 0.3;
   display: flex;
   align-items: center;
-  width: 300px;
+  max-width: 300px;
+  overflow: hidden;
 }
 .footer__songImage {
   height: 60px;
@@ -26,6 +27,9 @@
 .footer__songDetails {
   display: flex;
   align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 80px;
 }
 .footer__songInfo {
   margin-right: 15px;
@@ -73,4 +77,59 @@
 
 .slider {
   color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__right {
+    display: none;
+  }
+  .footer__left,
+  .footer__middle {
+    flex: 0.5;
+  }
+  .footer__songInfo > p {
+    font-size: 0.7rem;
+  }
+  .footer__songInfo > h4 {
+    font-size: 0.9rem;
+  }
+  .footer__songImage {
+    height: 50px;
+    width: 50px;
+  }
+  .footer__icon__left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__middleLeft,
+  .footer__middleRight {
+    display: none;
+  }
+  .footer__middle {
+    flex: 0.2;
+  }
+  .footer__left {
+    flex: 0.8;
+  }
+  .footer__icon__left {
+    display: none;
+  }
+  .footer__icon {
+    margin-right: 5px;
+  }
+  .footer__songInfo {
+    margin-right: 5px;
+  }
+  .footer__songInfo > p {
+    font-size: 0.6rem;
+  }
+  .footer__songInfo > h4 {
+    font-size: 0.8rem;
+  }
+  .footer__songImage {
+    height: 40px;
+    width: 40px;
+  }
 }

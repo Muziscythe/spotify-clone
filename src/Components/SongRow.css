@@ -28,3 +28,18 @@
   font-size: 0.85rem;
   color: #b4b4b4;
 }
+
+@media only screen and (max-width: 600px) {
+  .songRow__info > p > span {
+    display: none;
+  }
+  .songRow {
+    margin-left: 0;
+  }
+  .songRow__info > h4 {
+    font-size: 0.9rem;
+  }
+  .songRow__info > p {
+    font-size: 0.7rem;
+  }
+}

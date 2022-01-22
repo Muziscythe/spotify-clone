@@ -61,3 +61,26 @@
 .playerBody__songRow {
   margin-left: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .playerBody {
+    flex: 1;
+  }
+  .playerBody__banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .playerBody__info {
+    text-align: center;
+  }
+  .playerBody__info > h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .playerBody__info > strong {
+    display: none;
+  }
+  .banner__image {
+    height: 30vw;
+  }
+}

@@ -40,6 +40,7 @@ function PlayerBody() {
         //     });
         //   });
       };
+      
     console.log(discoverWeekly);
     return (
         <div className='playerBody'>

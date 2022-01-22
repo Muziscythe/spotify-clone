@@ -66,3 +66,18 @@
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
+
+@media only screen and (max-width: 600px) {
+  .header__profile > h4 {
+    display: none;
+  }
+  .header__rightInner {
+    margin-right: 10px;
+  }
+  .header__left {
+    display: none;
+  }
+  .header__right {
+    margin-left: auto;
+  }
+}

@@ -64,18 +64,19 @@ function Footer() {
                             <p>...</p>
                         </div>
                         )}
-                    <FavoriteBorderIcon className='footer__icon' fontSize="small" />
+                        <div className="footer__icon__left"><FavoriteBorderIcon className='footer__icon' fontSize="small" /></div>
                 </div>
             </div>
             <div className='footer__middle'>
                 <div className='footer__middleInner'>
-                <ShuffleIcon className='footer__icon' />
-                <SkipPreviousIcon  className='footer__icon' />
-                {playing
+                <div className="footer__middleLeft"><ShuffleIcon className='footer__icon' />
+                <SkipPreviousIcon  className='footer__icon' /></div>
+                <div className="footer__middleCenter">{playing
                     ?<PauseCircleFilledIcon  fontSize='large' className='footer__icon' />
-                    :<PlayCircleFilledIcon  fontSize='large' className='footer__icon' />}
-                <SkipNextIcon  className='footer__icon' />
-                <RepeatIcon className='footer__icon' />
+                    :<PlayCircleFilledIcon  fontSize='large' className='footer__icon' />}</div>
+                
+                <div className="footer__middleRight"><SkipNextIcon  className='footer__icon' />
+                <RepeatIcon className='footer__icon' /></div>
                 </div>    
             </div>
             <div className='footer__right'>
